@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import PageWrapper from "../components/PageWrapper";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
+import successImg from "../assets/checkout-images/success.png";
 
 export default function ThankYou() {
   const navigate = useNavigate();
@@ -30,11 +31,7 @@ export default function ThankYou() {
         </button>
 
         <div className="min-w-[263px] space-y-0">
-          <img
-            src="/checkout-images/success.png"
-            alt="Success"
-            className="mx-auto mt-20"
-          />
+          <img src={successImg} alt="Success" className="mx-auto mt-20" />
           <p className="text-limegreenSecondary text-3xl mx-auto min-w-[264px] p-6 text-center font-poppins mb-0">
             Thanks for your patronage
           </p>
