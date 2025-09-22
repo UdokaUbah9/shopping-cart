@@ -10,7 +10,7 @@ export default function ThankYou() {
 }
 
 
-export default function ThankYu() {
+export default function ThankYou() {
   const navigate = useNavigate();
 
   const randomNumber = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
