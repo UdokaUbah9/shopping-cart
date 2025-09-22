@@ -3,6 +3,8 @@ import PageWrapper from "../components/PageWrapper";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
 
+import success from "./../../public/checkout-images/success.png";
+
 export default function ThankYu() {
   const navigate = useNavigate();
 
@@ -30,11 +32,7 @@ export default function ThankYu() {
         </button>
 
         <div className="min-w-[263px] space-y-0">
-          <img
-            src="/public/checkout-images/success.png"
-            alt="checked out"
-            className="mx-auto mt-20"
-          />
+          <img src={success} alt="checked out" className="mx-auto mt-20" />
           <p className="text-limegreenSecondary text-3xl mx-auto min-w-[264px] p-6 text-center font-poppins mb-0">
             Thanks for your patronage
           </p>
