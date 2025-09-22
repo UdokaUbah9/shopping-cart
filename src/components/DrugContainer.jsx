@@ -168,6 +168,7 @@ export default function DrugContainer() {
           );
         })}
       </div>
+      {/* <div className="w-28 h-28 bg-red-500"></div> */}
 
       <div className="w-full overflow-x-auto py-2">
         <div className="flex gap-4 min-w-full overflow-x-scroll [scrollbar-width:none] overflow-y-hidden">
@@ -209,9 +210,9 @@ export default function DrugContainer() {
                     )}
                   </button>
                   {inCart ? (
-                    <button className="absolute bottom-0 right-0 bg-limegreenSecondary text-zinc-500 p-1 rounded-br-lg stroke-2">
+                    <div className="absolute bottom-0 right-0 bg-limegreenSecondary text-zinc-500 p-1 rounded-br-lg stroke-2">
                       <AddAndRemoveCart cart={inCart} home={true} />
-                    </button>
+                    </div>
                   ) : (
                     <button
                       className="absolute bottom-0 right-0 bg-limegreenSecondary text-zinc-500 p-1 rounded-br-lg stroke-2"
@@ -239,6 +240,7 @@ export default function DrugContainer() {
           })}
         </div>
       </div>
+      {filteredDataSearch3.length === 0 && <div className="w-16 h-16"></div>}
       {filteredDataSearch3.length === 0 ? null : (
         <>
           <Brands />
@@ -286,9 +288,9 @@ export default function DrugContainer() {
                           )}
                         </button>
                         {inCart ? (
-                          <button className="absolute bottom-0 right-0 bg-limegreenSecondary text-zinc-500 p-1 rounded-br-lg stroke-2">
+                          <div className="absolute bottom-0 right-0 bg-limegreenSecondary text-zinc-500 p-1 rounded-br-lg stroke-2">
                             <AddAndRemoveCart cart={inCart} home={true} />
-                          </button>
+                          </div>
                         ) : (
                           <button
                             className="absolute bottom-0 right-0 bg-limegreenSecondary text-zinc-500 p-1 rounded-br-lg stroke-2"

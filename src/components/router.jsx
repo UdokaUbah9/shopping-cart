@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./AppLayout";
-
 import HomePage from "../pages/HomePage";
+import ThankYou from "../pages/ThankYou";
 import Cart from "../pages/CartPage";
 import ChatAi from "../pages/ChatAiPage";
 import ProfilePage from "../pages/ProfilePage";
@@ -31,6 +31,10 @@ const router = createBrowserRouter([
       {
         element: <CheckOut />,
         path: "/cart/checkout",
+      },
+      {
+        element: <ThankYou />,
+        path: "/order-successful",
       },
     ],
   },

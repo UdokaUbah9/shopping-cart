@@ -12,7 +12,7 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
 
   if (type === "checkedout") {
     return (
-      <div className="mt-[44px] bg-white fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto p-3 space-y-2">
+      <div className=" mt-[44px] bg-white fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto -y-2">
         <button className="max-w-[480px] min-h-[48px] rounded-2xl p-3 border-limegreenSecondary border text-limegreenSecondary bg-white font-bold text-lg tracking-wider w-[100%] h-[100%] mb-4">
           Order Detail
         </button>
@@ -29,7 +29,7 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
 
   if (type === "cart" || type === "checkout" || type === "checkedout")
     return (
-      <div className="bg-white fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto p-3 space-y-6">
+      <div className=" bg-white fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto -y-6">
         <div className="mx-auto">
           <input
             type="number"
@@ -57,12 +57,14 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
           `}
         >
           {type === "checkout" && (
-            <button
-              className="font-bold text-lg tracking-wider w-[100%] h-[100%]"
-              onClick={() => onCheckOut()}
-            >
-              Check Out
-            </button>
+            <Link to="/order-successful">
+              <button
+                className="font-bold text-lg tracking-wider w-[100%] h-[100%]"
+                onClick={() => onCheckOut()}
+              >
+                Check Out
+              </button>
+            </Link>
           )}
 
           {type === "cart" && (
@@ -82,7 +84,7 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
 
   if (type === "home")
     return ReactDOM.createPortal(
-      <div className="h-[61px] bg-white fixed -bottom-4 left-0 right-0 shadow-lg z-50 m-4 max-w-[1200px] mx-auto md:h-[71px]">
+      <div className=" h-[61px] bg-white fixed -bottom-4 left-0 right-0 shadow-lg z-50 m-4 max-w-[1200px] mx-auto md:h-[71px]">
         <div className="bg-limegreenSecondary p-4 rounded-full flex justify-between items-start text-center w-[90%] m-auto h-[61px] md:h-[71px] md:p-6 mx-auto">
           <NavLink to="/" className="relative">
             {({ isActive }) =>
