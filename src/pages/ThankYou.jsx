@@ -6,11 +6,6 @@ import { useNavigate } from "react-router-dom";
 import successImg from "/checkout-images/success.png";
 
 export default function ThankYou() {
-  return <img src={successImg} alt="Success" />;
-}
-
-
-export default function ThankYou() {
   const navigate = useNavigate();
 
   const randomNumber = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
