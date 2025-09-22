@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug1.png",
+      "price": "3.50",
+      "nutrient": "Absorbic acid",
+      "quantity": 0
+    },
+    {
+      "id": 1,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug2.png",
+      "price": "4.94",
+      "nutrient": "Zen suppliment",
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug3.png",
+      "price": "32.55",
+      "nutrient": "Liquid ionic",
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug4.png",
+      "price": "60.25",
+      "nutrient": "pH alkalinizing",
+      "quantity": 0
+    },
+    {
+      "id": 4,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug5.png",
+      "price": "22.99",
+      "nutrient": "Lizinopril",
+      "quantity": 0
+    },
+    {
+      "id": 5,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug6.png",
+      "price": "60.25",
+      "nutrient": "Biotin",
+      "quantity": 0
+    },
+    {
+      "id": 6,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug7.png",
+      "price": "41.99",
+      "nutrient": "Pottasium BHB",
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug8.png",
+      "price": "60.25",
+      "nutrient": "Himalayan salt",
+      "quantity": 0
+    },
+    {
+      "id": 8,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug9.png",
+      "price": "12.99",
+      "nutrient": "finaflex pure",
+      "quantity": 0
+    },
+    {
+      "id": 9,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug10.png",
+      "price": "7.99",
+      "nutrient": "Trio-E 400 IU",
+      "quantity": 0
+    },
+    {
+      "id": 10,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug11.png",
+      "price": "32.99",
+      "nutrient": "Vitamin E",
+      "quantity": 0
+    },
+    {
+      "id": 11,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug12.png",
+      "price": "15.99",
+      "nutrient": "Vitamin D3",
+      "quantity": 0
+    },
+    {
+      "id": 12,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug13.png",
+      "price": "8.99",
+      "nutrient": "Vitamin C",
+      "quantity": 0
+    },
+    {
+      "id": 13,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug4.png",
+      "price": "60.25",
+      "nutrient": "pH alkalinizing",
+      "quantity": 0
+    },
+    {
+      "id": 14,
+      "detail": "The ordinary",
+      "path": "/drug-images/drug5.png",
+      "price": "22.99",
+      "nutrient": "Lizinopril",
+      "quantity": 0
+    }
+  ]
+}
