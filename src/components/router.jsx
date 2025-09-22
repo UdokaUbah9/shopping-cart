@@ -40,6 +40,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    element: <NotFound />,
+    path: "*",
+  },
 ]);
 
 export default router;

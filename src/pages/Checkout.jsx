@@ -15,7 +15,6 @@ export default function CheckOut() {
     { id: 2, method: "Gift Card" },
     { id: 3, method: "Bank Transfer" },
   ];
-  const randomNumber = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
 
   const handleSelected = (id) => {
     setSelected(id);

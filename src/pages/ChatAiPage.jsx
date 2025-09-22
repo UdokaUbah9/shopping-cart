@@ -200,7 +200,7 @@ export default function ChatAi() {
       placeholder="Ask anything"
       value={input}
       onChange={(e) => setInput(e.target.value)}
-      className="pl-10 pr-10 py-2 rounded w-full font-roboto bg-limegreenPrimary h-10 text-sm text-zinc-800 focus:outline-none focus:ring-2 focus:ring-limegreenSecondary"
+      className="pl-10 pr-10 py-2 rounded w-full font-roboto bg-limegreenPrimary h-10 text-zinc-800 focus:outline-none focus:ring-2 focus:ring-limegreenSecondary"
     />
     <button disabled={isTyping}
       className={`${isTyping ? "bg-slate-400" : "bg-limegreenSecondary"} text-limegreenLight py-2 px-3 rounded-lg`}
