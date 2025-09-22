@@ -17,13 +17,14 @@ body {
   margin: 0 auto;
   background-color: white;
 }
-/* @media (min-width: 940px) {
-  .container {
-    padding: 20px;
+
+@layer base {
+  input,
+  textarea,
+  select {
+    @apply text-base;
   }
-} */
-/* CSS */
-/* HTML: <div class="loader"></div> */
+}
 .loader {
   width: 50px;
   aspect-ratio: 1;

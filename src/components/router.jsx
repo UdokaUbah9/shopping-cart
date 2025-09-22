@@ -6,10 +6,12 @@ import Cart from "../pages/CartPage";
 import ChatAi from "../pages/ChatAiPage";
 import ProfilePage from "../pages/ProfilePage";
 import CheckOut from "../pages/Checkout";
+import NotFound from "./NotFound";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
+    errorElement: <NotFound />, // 👈 handles errors + 404
     children: [
       {
         element: <HomePage />,

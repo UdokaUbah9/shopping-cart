@@ -31,7 +31,7 @@ export default function ThankYu() {
 
         <div className="min-w-[263px] space-y-0">
           <img
-            src="./../../public/checkout-images/success.png"
+            src="/public/checkout-images/success.png"
             alt="checked out"
             className="mx-auto mt-20"
           />

@@ -17,6 +17,7 @@ function LocationProvider({ children }) {
       }
       setIsLoading(true);
       if ("geolocation" in navigator) {
+        console.log("Requesting location...");
         navigator.geolocation.getCurrentPosition(
           async (position) => {
             const { latitude, longitude } = position.coords;

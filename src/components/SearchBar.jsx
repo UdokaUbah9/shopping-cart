@@ -13,7 +13,7 @@ export default function SearchBar() {
           placeholder="Search drugs..."
           value={searchInput}
           onChange={onSearchInput}
-          className="pl-8 pr-10 py-2 rounded w-full font-roboto bg-limegreenPrimary h-8  md:h-10 md:text-lg text-sm text-zinc-800 focus:outline-none focus:ring-2 focus:ring-limegreenSecondary"
+          className="pl-8 pr-10 py-2 rounded w-full font-roboto bg-limegreenPrimary h-8  md:h-10 md:text-lg text-zinc-800 focus:outline-none focus:ring-2 focus:ring-limegreenSecondary"
         />
         <HiOutlineMicrophone className="absolute top-1/2 -translate-y-1/2 text-zinc-500 right-3 md:text-lg" />
       </div>

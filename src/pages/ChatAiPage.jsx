@@ -109,7 +109,7 @@ export default function ChatAi() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask anything"
-                className="pl-10 pr-10 py-2 rounded w-full font-roboto bg-limegreenPrimary h-10 text-sm text-zinc-800 focus:outline-none focus:ring-2  focus:ring-limegreenSecondary"
+                className="pl-10 pr-10 py-2 rounded w-full font-roboto bg-limegreenPrimary h-10 text-zinc-800 focus:outline-none focus:ring-2  focus:ring-limegreenSecondary"
               />
               <HiOutlineMicrophone className="absolute top-1/2 -translate-y-1/2 text-zinc-500 right-0 text-2xl z-10 cursor-pointer" />
             </div>

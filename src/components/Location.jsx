@@ -9,14 +9,14 @@ export default function Location() {
 
   return (
     <div>
-      <p className="text-left text-zinc-500 font-light mb-0 md:text-sm text-xs">
+      <p className="text-left text-zinc-500 font-light mb-0 md:text-sm text-sm">
         location
       </p>
       <div className="flex justify-between items-center mt-0 ">
         <div className="text-zinc-800 font-semibold text-xs md:text-sm">
           <FaMapMarkerAlt className="inline-block" />
           {isLoading ? (
-            <em className="text-xs font-light">fetching location...</em>
+            <em className="text-lg font-light">fetching location...</em>
           ) : (
             !error && location.split(", ").splice(2, 4).join(", ")
           )}
