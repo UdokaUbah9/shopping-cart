@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import PageWrapper from "../components/PageWrapper";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
-import successImg from "../assets/checkout-images/success.png";
+import successImg from "../assets/success.png";
 
 export default function ThankYou() {
   const navigate = useNavigate();
