@@ -3,7 +3,12 @@ import PageWrapper from "../components/PageWrapper";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
 
-import success from "./../../public/checkout-images/success.png";
+import successImg from "/checkout-images/success.png";
+
+export default function ThankYou() {
+  return <img src={successImg} alt="Success" />;
+}
+
 
 export default function ThankYu() {
   const navigate = useNavigate();
