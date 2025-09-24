@@ -44,6 +44,7 @@ app.post("/api/chat", async (req, res) => {
 app.get("/api/location", async (req, res) => {
   const { lat, lon } = req.query;
   const apiKey = process.env.OPENCAGE_API_KEY;
+  console.log("API Key:", process.env.OPENCAGE_API_KEY);
   const url = `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lon}&key=${apiKey}`;
 
   try {

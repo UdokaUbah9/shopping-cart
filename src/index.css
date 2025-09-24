@@ -17,6 +17,24 @@ body {
   background-color: white;
 }
 
+@keyframes staggerIn {
+  00% {
+    transform: translateX(20px); /* start slightly from the right */
+  }
+  40% {
+    transform: translateX(-15px); /* swing left */
+  }
+  70% {
+    transform: translateX(12px); /* small rebound right */
+  }
+  100% {
+    transform: translateX(0); /* settle center */
+  }
+}
+
+.slideStagger {
+  animation: staggerIn 0.8s ease forwards;
+}
 @layer base {
   input,
   textarea,

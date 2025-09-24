@@ -5,8 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         limegreenPrimary: "#f8fff8",
@@ -14,12 +13,6 @@ export default {
         limegreenLight: "#f7fbec",
         limegreenCart: "#f8fff8",
         limegreenChat: "#89966a",
-      },
-      screens: {
-        sm: "393px" /* small tablets / large phones */,
-        // md: "640px" /* tablets */,
-        // lg: "768px" /* small desktops / landscape tablets */,
-        // xl: "1024px" /* large desktops */,
       },
     },
   },

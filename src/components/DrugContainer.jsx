@@ -160,7 +160,7 @@ export default function DrugContainer() {
                 <p className="text-sm md:text-lg font-bold text-zinc-800">
                   {data.nutrient}
                 </p>
-                <p className="text-limegreenSecondary font-poppins font-bold text-sm sm:text-base md:text-lg">
+                <p className="text-limegreenSecondary font-bold text-sm sm:text-base md:text-lg">
                   ${data.price}
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function DrugContainer() {
                   <p className="text-sm md:text-lg font-bold text-zinc-800">
                     {data.nutrient}
                   </p>
-                  <p className="text-limegreenSecondary font-poppins font-bold text-sm sm:text-base md:text-lg">
+                  <p className="text-limegreenSecondary font-bold text-sm sm:text-base md:text-lg">
                     ${data.price}
                   </p>
                 </div>
@@ -306,10 +306,10 @@ export default function DrugContainer() {
                         <p className="text-[0.65rem] sm:text-xs md:text-sm text-zinc-500">
                           {data.detail}
                         </p>
-                        <p className="text-sm  md:text-lg font-bold text-zinc-800">
+                        <p className="text-sm  md:text-lg font-extrabold text-zinc-800">
                           {data.nutrient}
                         </p>
-                        <p className="text-limegreenSecondary font-poppins font-bold text-sm sm:text-base md:text-lg">
+                        <p className="text-limegreenSecondary font-bold text-sm sm:text-base md:text-lg">
                           ${data.price}
                         </p>
                       </div>

@@ -194,7 +194,7 @@ export default function ChatAi() {
   </div>
 
   <div className="relative mt-4 w-full gap-2 flex">
-    <HiOutlinePlus className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500 text-lg z-10" />
+    <img src="/search-images/microphone.png" alt="microphone" className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500 text-lg z-10" />
     <input
       type="text"
       placeholder="Ask anything"

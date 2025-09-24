@@ -12,13 +12,13 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
 
   if (type === "checkedout") {
     return (
-      <div className=" mt-[44px] bg-white fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto -y-2">
-        <button className="max-w-[480px] min-h-[48px] rounded-2xl p-3 border-limegreenSecondary border text-limegreenSecondary bg-white font-bold text-lg tracking-wider w-[100%] h-[100%] mb-4">
+      <div className=" flex flex-col items-center mt-[44px] fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto bg-white md:flex-row md:gap-4 md:justify-center">
+        <button className="max-w-[345px] min-h-[48px] rounded-2xl p-3 border-limegreenSecondary border text-limegreenSecondary bg-white font-bold text-lg tracking-wider w-[100%] h-[100%] mb-3">
           Order Detail
         </button>
 
         <button
-          className="max-w-[480px] min-h-[48px] rounded-2xl p-3 text-limegreenPrimary bg-limegreenSecondary font-bold text-lg tracking-wider w-[100%] h-[100%] mb-4"
+          className="max-w-[345px] min-h-[48px] rounded-2xl p-3 text-limegreenPrimary bg-limegreenSecondary font-bold text-lg tracking-wider w-[100%] h-[100%] mb-3"
           onClick={() => onAnotherPurchase()}
         >
           Another Purchase?
@@ -39,7 +39,7 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
 
           <div className="flex justify-between text-zinc-700 px-5 font-light mt-4">
             <div className="text-left">
-              <p className="font-semibold text-xl">Total</p>
+              <p className="font-bold text-xl">Total</p>
               <p className="text-sm text-zinc-500">Order and get 34 points</p>
             </div>
 

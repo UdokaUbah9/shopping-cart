@@ -14,7 +14,7 @@ export default function CategoryImageContainer() {
   return (
     <>
       <div className="flex justify-between items-center mt-4">
-        <p className=" text-zinc-800 font-semibold text-lg">Category</p>
+        <p className=" text-zinc-800 font-extrabold text-lg">Category</p>
         <p
           //   onClick={toggleShowAll}
           role="button"
@@ -47,7 +47,7 @@ export default function CategoryImageContainer() {
               {/* Text below */}
               <p
                 className="
-          text-xs text-zinc-800 mt-4 md:mt-8 font-poppins text-center min-w-[72px]  mx-auto
+          text-xs text-zinc-800 mt-4 md:mt-8 font-inter text-center min-w-[72px]  mx-auto
          md:text-lg
         "
               >

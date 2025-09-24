@@ -32,18 +32,18 @@ export default function ThankYou() {
 
         <div className="min-w-[263px] space-y-0">
           <img src={successImg} alt="Success" className="mx-auto mt-20" />
-          <p className="text-limegreenSecondary text-3xl mx-auto min-w-[264px] p-6 text-center font-poppins mb-0">
+          <p className="text-limegreenSecondary text-3xl mx-auto min-w-[264px] p-6 text-center font-inter mb-0">
             Thanks for your patronage
           </p>
           <p className="text-xs md:text-sm text-zinc-700 text-center mt-0 min-w-[100px]">
             Your order #FE54363698 is confirmed and is processing.
           </p>
         </div>
-        <p className="bg-limegreenCart py-1 px-7 rounded-full text-limegreenChat mt-32 font-bold font-poppins w-fit mx-auto">
+        <p className="bg-limegreenCart py-1 px-7 rounded-full text-limegreenChat mt-32 font-bold font-inter w-fit mx-auto">
           You have just earned {randomNumber}
         </p>
 
-        <p className="text-poppins text-sm md:text-sm text-center text-limegreenChat mt-10">
+        <p className="text-inter text-sm md:text-sm text-center text-limegreenChat mt-10">
           Need assistance? We're here for you if you have any issue or question
           or need support regarding your purchase, reach out to our customer
           suppport.

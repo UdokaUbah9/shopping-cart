@@ -4,7 +4,6 @@ import CategoryImageContainer from "../components/CategoryImageContainer";
 import SearchBar from "../components/SearchBar";
 import DrugContainer from "../components/DrugContainer";
 import Footer from "../components/Footer";
-import PageWrapper from "../components/PageWrapper";
 
 export default function HomePage() {
   return (

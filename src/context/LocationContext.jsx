@@ -17,7 +17,6 @@ function LocationProvider({ children }) {
       }
       setIsLoading(true);
       if ("geolocation" in navigator) {
-        console.log("Requesting location...");
         navigator.geolocation.getCurrentPosition(
           async (position) => {
             const { latitude, longitude } = position.coords;
@@ -27,16 +26,16 @@ function LocationProvider({ children }) {
                 // const apiKey = process.env.OPENCAGE_API_KEY;
 
                 const response = await fetch(
-                  `/api/location?lat=${lat}&lon=${lon}`
+                  `http://localhost:5000/api/location?lat=${lat}&lon=${lon}`
                 );
                 const data = await response.json();
-                console.log(data.data.location);
+                // console.log(data.data.location);
 
                 if (
                   data.data.location.status.code !== 200 ||
                   data.data.location.results.length === 0
                 ) {
-                  console.log("error");
+                  // console.log("error");
                   throw new Error("Failed to fetch location data");
                 }
                 setLocation(data.data.location.results[0].formatted);

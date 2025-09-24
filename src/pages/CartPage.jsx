@@ -55,7 +55,9 @@ export default function Cart() {
               <div className="ml-2">
                 <p className="font-semibold text-lg">{cart.nutrient}</p>
                 <p className="text-xs tracking-wide">1000mg</p>
-                <p className="mt-3 font-semibold">${cart.price}</p>
+                <p className="mt-3 font-bold text-limegreenSecondary font-inter">
+                  ${cart.price}
+                </p>
               </div>
 
               <div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [animateKey, setAnimateKey] = useState(currentSlide);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -11,9 +12,13 @@ export default function Slider() {
     const nextSlider = setInterval(() => {
       nextSlide();
     }, 4000);
-
+    setAnimateKey(Date.now()); // force unique key every slide change
     return () => clearInterval(nextSlider);
-  });
+  }, [currentSlide]);
+
+  // useEffect(() => {
+  //   setAnimateKey((prev) => prev + 1); // force re-apply animation
+  // });
 
   const slides = [
     "/slider-images/Slide1.png",
@@ -42,15 +47,18 @@ export default function Slider() {
 
           return (
             <div
-              key={idx}
-              className={`flex-shrink-0 ${paddingClass}`}
-              style={{ width: "100%" }}
+              key={`${idx} ${animateKey}`}
+              className={`flex-shrink-0 ${paddingClass} `}
+              style={{
+                width: "100%",
+                animationDelay: `${0.3}s`,
+              }}
             >
               <img
                 src={src}
                 alt={`Slide ${idx + 1}`}
                 // className="w-full object-cover rounded-lg"
-                className={`${
+                className={`slideStagger ${
                   currentSlide === idx
                     ? "w-full object cover rounded-lg "
                     : "w-full object-cover rounded-lg h-[75%] md:h-[80%] mt-3 md:mt-4"

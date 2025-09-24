@@ -68,7 +68,7 @@ export default function CheckOut() {
               )}
             </div>
           ))}
-          <p className="text-xs md:text-lg text-limegreenChat">
+          <p className="text-xs md:text-lg font-inter text-limegreenChat">
             Please note that all orders are typically processed within 1-2
             business days. Once your order has been processed and shipped, you
             will receive a confirmation email with tracking information
