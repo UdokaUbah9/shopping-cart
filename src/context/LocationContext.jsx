@@ -26,7 +26,7 @@ function LocationProvider({ children }) {
                 // const apiKey = process.env.OPENCAGE_API_KEY;
 
                 const response = await fetch(
-                  `http://localhost:5000/api/location?lat=${lat}&lon=${lon}`
+                  `/api/location?lat=${lat}&lon=${lon}`
                 );
                 const data = await response.json();
                 // console.log(data.data.location);
