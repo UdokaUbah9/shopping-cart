@@ -12,13 +12,13 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
 
   if (type === "checkedout") {
     return (
-      <div className=" flex flex-col items-center mt-[44px] fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto bg-white md:flex-row md:gap-4 md:justify-center">
+      <div className=" flex  flex-col items-center mt-[44px] fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto bg-white md:flex-row md:gap-4 md:justify-center mr-3 ml-3">
         <button className="max-w-[345px] min-h-[48px] rounded-2xl p-3 border-limegreenSecondary border text-limegreenSecondary bg-white font-bold text-lg tracking-wider w-[100%] h-[100%] mb-3">
           Order Detail
         </button>
 
         <button
-          className="max-w-[345px] min-h-[48px] rounded-2xl p-3 text-limegreenPrimary bg-limegreenSecondary font-bold text-lg tracking-wider w-[100%] h-[100%] mb-3"
+          className="max-w-[345px] min-h-[48px] rounded-2xl p-3 text-limegreenPrimary bg-limegreenSecondary font-bold text-lg tracking-wider w-[100%] h-[100%] mb-3 mr-3 ml-3"
           onClick={() => onAnotherPurchase()}
         >
           Another Purchase?
@@ -29,7 +29,7 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
 
   if (type === "cart" || type === "checkout" || type === "checkedout")
     return (
-      <div className=" bg-white fixed text-center bottom-0 left-0 right-0 shadow-lg z-50  max-w-[940px] mx-auto -y-6">
+      <div className=" bg-white fixed text-center bottom-0 left-0 right-0 shadow-lg z-50   max-w-[940px] mx-auto -y-6">
         <div className="mx-auto">
           <input
             type="number"
@@ -53,7 +53,7 @@ export default function Footer({ type, onCheckOut, onAnotherPurchase }) {
         <div
           className={`${
             cartItems.length === 0 ? "bg-slate-400" : "bg-limegreenSecondary"
-          } p-4 rounded-2xl text-center-[80%] m-auto h-[61px] text-limegreenLight
+          } mt-3 mb-3 mr-4 ml-4 rounded-2xl text-center-[80%] m-auto h-[48px] text-limegreenLight
           `}
         >
           {type === "checkout" && (

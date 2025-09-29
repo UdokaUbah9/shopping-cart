@@ -74,7 +74,7 @@ export default function CheckOut() {
             will receive a confirmation email with tracking information
           </p>
         </div>
-        <div className="h-[170px] md:h-[220px]"></div>
+        <div className="h-[176px] md:h-[226px]"></div>
 
         <Footer type="checkout" />
       </div>

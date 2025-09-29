@@ -75,7 +75,7 @@ export default function Cart() {
           </div>
         ))}
       </div>
-      <div className="h-[170px]"></div>
+      <div className="h-[176px]"></div>
       <Footer type="cart" />
     </div>
   );
